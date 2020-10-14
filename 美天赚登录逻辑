@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-14T16:17:30.340Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="IRK2OrOG7T2anGsGDD9g" version="13.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-14T16:26:51.003Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="WltyWgVq7MwvqXkLNOYv" version="13.8.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="788" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -179,9 +179,6 @@
         </mxCell>
         <mxCell id="4Vo9Ojg9HENzFIQd9sFM-63" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="680" y="760" width="30" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="4Vo9Ojg9HENzFIQd9sFM-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4Vo9Ojg9HENzFIQd9sFM-64" target="4Vo9Ojg9HENzFIQd9sFM-66">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4Vo9Ojg9HENzFIQd9sFM-64" value="重定向到登录页?continue&amp;amp;code=xx&lt;br&gt;&amp;amp;state=&lt;br&gt;(code和state微信种到url上）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="780" y="800" width="170" height="60" as="geometry" />
