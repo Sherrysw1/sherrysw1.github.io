@@ -1,0 +1,2 @@
+1.webpack 为什么要把css放在<style>标签嵌入在html中而不是使用css文件引入？
+answer: webpack 讲究模块式开发，一个组件对应一个css，放在一起便于维护，迁移，删除讲究高内聚低耦合，各个组件最大化独立，这也不难理解放在一起使用了，但是打包的时候可以用插件去做整理(extract-text-webpack-plugin)
