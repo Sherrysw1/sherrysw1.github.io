@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "yarn build && bash deploy.sh"
+    "git": "bash deploy.sh",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
+    "commit": "yarn build && yarn deploy"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "vuepress": "^1.9.8"
   }
 }

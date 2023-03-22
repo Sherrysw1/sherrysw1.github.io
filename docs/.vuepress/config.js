@@ -29,7 +29,7 @@ module.exports = {
     keywords: '前端开发',
     description: '前端开发 sherrysw个人博客',
     repo: 'https://github.com/Sherrysw1/sherrysw1.github.io.git',  //仓库地址
-    base: '/blog/',  // 配合部署项目
+    base: '/',  // 配合部署项目
     head: [
         ['link', { rel: 'icon', href: 'https://avatars.githubusercontent.com/u/30037961?v=4' }]
     ],
