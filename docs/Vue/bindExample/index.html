@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="name">
+        {{name}}
+    </div>
+    <script src="./observer.js"></script>
+    <script src="./watcher.js"></script>
+    <script src="./compiler.js"></script>
+    <script type="text/javascript">
+        const myVue = new SelfVue({
+            el: '#app',
+            data: {
+                name: '123'
+            }
+        });
+
+        function SelfVue(options) {
+            this.data = options.data;
+            observer(this.data);
+            let id = options.el;
+            const el = document.querySelector(id);
+            let dom = nodeToFragment(el, this);
+            // 处理完所有dom节点后,重新将内容添加回去
+            el.appendChild(dom);
+        }
+
+        function nodeToFragment(node, vm) {
+            let fragment = document.createDocumentFragment();
+            let child;
+            while (child = node.firstChild) {
+                compiler(child, vm);
+                fragment.appendChild(child);
+            }
+            return fragment
+        }
+    </script>
+</body>
+</html>
