@@ -1,6 +1,7 @@
+#!/bin/bash
+
 echo deploy...
-cd docs/.vuepress/dist
-git init
+# cd docs/.vuepress/dist
 git config user.name Sherrysw1
 git config user.email 516773027@qq.com
 git add -A
