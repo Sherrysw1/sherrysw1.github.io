@@ -3,24 +3,6 @@ set -euo pipefail
 
 echo "🚀 开始构建部署流程..."
 
-# ── 1. 检查工作区是否干净 ──────────────────────────────────
-if [[ -n $(git status --porcelain) ]]; then
-  echo "📦 检测到未提交的变更..."
-  git add -A
-  git commit -m "chore: auto commit before deploy" || true
-fi
-
-# ── 2. 拉取远端最新代码（避免冲突） ────────────────────────
-BRANCH=$(git branch --show-current)
-echo "🔁 拉取远端 $BRANCH 最新代码..."
-git pull origin "$BRANCH" --rebase || {
-  echo "⚠️  拉取失败，跳过 rebase，继续构建..."
-}
-
-# ── 3. 安装依赖 & 构建 ────────────────────────────────────
-echo "📦 安装依赖..."
-pnpm install --frozen-lockfile
-
 echo "🔨 构建静态站点..."
 pnpm build
 
