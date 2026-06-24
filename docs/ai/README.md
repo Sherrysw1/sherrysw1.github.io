@@ -16,3 +16,4 @@ title: AI
 ## 文章
 
 - [AI 工作流笔记](../posts/ai-workflow-notes.md)
+- [知识建设思路图](./knowledge-building/)

@@ -41,7 +41,7 @@ export default defineUserConfig({
       '/ai/': [
         {
           text: 'AI',
-          children: ['/ai/', '/posts/ai-workflow-notes.md']
+          children: ['/ai/', '/posts/ai-workflow-notes.md', '/ai/knowledge-building/']
         }
       ],
       '/rd/': [
