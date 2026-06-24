@@ -10,7 +10,13 @@ export default defineUserConfig({
     ['meta', { name: 'theme-color', content: '#101010' }],
     ['meta', { name: 'keywords', content: 'frontend, ai, rd, blog, vuepress' }]
   ],
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      ssr: {
+        noExternal: ['vue']
+      }
+    }
+  }),
   theme: defaultTheme({
     logo: null,
     navbar: [
